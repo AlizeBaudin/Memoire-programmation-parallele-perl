@@ -6,7 +6,7 @@ La deuxième partie est en cours de finalisation, elle montrera une application 
 # Contenue du mémoire
 Le projet principal du mémoire à pour but de trouver une méthode générale et applicable à tout type de langage pour faire du multithreading. 
 La première partie du mémoire prend pour exemple d'application de la programmation parallèle le script de récupération de l'uptime d'un équipement. 
-La seconde partie (non disponible encore), est d'appliquer la méthode trouvée à un script de sauvegarde d'un data center.
+La seconde partie (non disponible encore), est d'appliquer la méthode trouvée à un script de sauvegarde d'un data center. En particulier sur l'enregistrement des fichier UCS (universal configuration system) et SCF (system command file). Ces deux fichiers permettent de retracer complètement toute la configuration de l'équipement, pouvant être configurer sur un boîtier vide afin de retrouver tout l'équipement enregistré. 
 
 En ce mémoire nous avons décidé de rester en langage Perl pour trois raisons : <br>
   1) Perl est un langage de programmation permettant de lire les fichiers texte et de customiser cette lecture qui est fondamentale lorsque l'on doit manipuler des fichiers sur les équipements d'un data center
@@ -23,4 +23,10 @@ Tout dû être fait et travaillé en grande partie à l'aide de la documentation
 En outre, ce travail est une preuve de ma capacité d'autonomie dans la réalisation de mon travail de développeuse.
 Ma connaissance en Python m'a permis de comprendre les bibliothèques utilisées dans le data center en Perl, qui est très similiaire à la notion de classe en Python,
 mais aussi de pouvoir utiliser les formats initiaux en Python sur du multithreading.
+
+# Résultats
+C'est donc avec joie, que tout au long de cette productivite, j'ai pu optimiser deux scripts en Perl : <br>
+  1) le premier, qui s'éxécutait en 8h, après application de la programmation parallèle, il s'exécute en 1h (et 7 minutes)
+  2) le second, qui est en cours de finalisation, s'exécute en 46h. Avec l'application du modèle de programmation parallèle du premier script réduit sont temps à 5h d'exécution.
+
 
